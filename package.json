@@ -1,0 +1,49 @@
+{
+  "name": "brain-games-khannanova",
+  "version": "1.6.0",
+  "description": "Comand line brain games",
+  "keywords": [
+    "game",
+    "command line game",
+    "brain games"
+  ],
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-calc": "dist/bin/brain-calc.js",
+    "brain-gcd": "dist/bin/brain-gcd.js",
+    "brain-progression": "dist/bin/brain-progression.js",
+    "brain-prime": "dist/bin/brain-prime.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khannanova/project-lvl1-s388.git"
+  },
+  "author": "Svetlana Khannanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khannanova/project-lvl1-s388/issues"
+  },
+  "homepage": "https://github.com/khannanova/project-lvl1-s388#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
+}
